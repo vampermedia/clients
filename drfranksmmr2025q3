@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2025 Digital Marketing Report & Calendar</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and necessary colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-green': '#10B981', // Emerald 500
+                        'primary-red': '#EF4444',   // Red 500
+                        'theme-1': '#06B6D4', // Cyan 500
+                        'theme-2': '#6366F1', // Indigo 500
+                        'theme-3': '#F97316', // Orange 500
+                        'theme-4': '#EC4899', // Pink 500
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom scrollbar styling for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #d1d5db; /* Gray 300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f3f4f6; /* Gray 100 */
+        }
+        .day-cell {
+            /* Ensures days are squares */
+            aspect-ratio: 1 / 1; 
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .day-cell:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Header -->
+        <header class="mb-4">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">
+                Q4 Digital Performance Report
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-600">
+                <span class="font-semibold">Dr. Frank Shallenberger</span> — Strategic Review (Oct–Dec 2025)
+            </p>
+        </header>
+
+        <!-- Section 1: Overview & Key Trends -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">1. Overall Growth Metrics (Q3 vs. Q4)</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Metric Card: Followers -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl border-t-4 border-primary-green">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-4a3 3 0 00-5.356-1.857M17 20v-2c0-.523-.086-1.056-.252-1.571m0 0A5.992 5.992 0 0015 15.177H8a5.992 5.992 0 00-1.748.252m0 0A2.988 2.988 0 015 15.22V16m2.545-5.454l1.246-.997M17.455 10.546l-1.246-.997M14 6H9m1.5 2h-3m4.5 4h-3"></path></svg>
+                        <p class="text-xl font-semibold text-gray-700">Follower Growth</p>
+                    </div>
+                    <p class="text-3xl font-extrabold text-primary-green mb-2">+677% (TikTok Lead)</p>
+                    <p class="text-gray-500 text-sm">Strong growth across platforms — <span class="font-bold">TikTok (+677%)</span>, <span class="font-bold">Instagram (+42%)</span>, <span class="font-bold">YouTube (+23%)</span>, <span class="font-bold">Facebook (+67%)</span>.</p>
+                </div>
+                <!-- Metric Card: Impressions -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl border-t-4 border-primary-green">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        <p class="text-xl font-semibold text-gray-700">Impressions</p>
+                    </div>
+                    <p class="text-3xl font-extrabold text-primary-green mb-2">+412% (TikTok & FB)</p>
+                    <p class="text-gray-500 text-sm"><span class="font-bold">TikTok (+412%)</span> and <span class="font-bold">Facebook (+206%)</span> led growth; Instagram and YouTube more modest.</p>
+                </div>
+                <!-- Metric Card: Engagement -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl border-t-4 border-primary-green">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="text-xl font-semibold text-gray-700">Interaction Surge</p>
+                    </div>
+                    <p class="text-3xl font-extrabold text-primary-green mb-2">+440% (TikTok Peak)</p>
+                    <p class="text-gray-500 text-sm"><span class="font-bold">TikTok</span> saw the biggest interaction surge <span class="font-bold">(+440%)</span>, while <span class="font-bold">Instagram (+50%)</span> and <span class="font-bold">YouTube (+350%)</span> also improved.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: SWOT Summary -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">2. Strengths & Opportunities</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Strengths -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-primary-green">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Key Strengths
+                    </h3>
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside ml-4">
+                        <li><span class="font-bold">TikTok dominance:</span> Explosive follower and engagement growth — now the clinic’s strongest platform.</li>
+                        <li><span class="font-bold">Content Fit:</span> Myth-busting / contrarian health takes resonate across platforms.</li>
+                        <li><span class="font-bold">Video First:</span> Short-form video content drives the majority of impressions and interactions.</li>
+                    </ul>
+                </div>
+                <!-- Weaknesses / Opportunities -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-primary-red">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-primary-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Weaknesses & Opportunities
+                    </h3>
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside ml-4">
+                        <li><span class="font-bold">Facebook underperformance:</span> Low reach per post and minimal engagement.</li>
+                        <li><span class="font-bold">YouTube watch time:</span> High views but low average watch duration (15–30s drop-off).</li>
+                        <li><span class="font-bold">Instagram Stories:</span> Underutilized, low impressions but high opportunity for community (polls, Q&As, behind-the-scenes).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Strategic Recommendations -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">3. Strategic Recommendations</h2>
+            <ol class="space-y-4 text-gray-700 list-decimal list-inside ml-4">
+                <li class="p-3 bg-green-50 rounded-lg border-l-4 border-primary-green">
+                    <span class="font-bold">Double down on TikTok:</span> Scale production of short myth-busting clips (statins, cholesterol, autoimmune disease, diabetes prevention).
+                </li>
+                <li class="p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <span class="font-bold">Cross-post strategy:</span> Cross-post best TikToks/Reels to Facebook with paid micro-boosts to reach older audience segments.
+                </li>
+                <li class="p-3 bg-red-50 rounded-lg border-l-4 border-primary-red">
+                    <span class="font-bold">Improve YouTube retention:</span> Add storytelling hooks, chaptering, and stronger CTAs to keep viewers past the 15–30 second drop-off.
+                </li>
+                <li class="p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <span class="font-bold">Expand Instagram Stories:</span> Daily engagement tools (polls, quizzes, “Ask Dr. Frank”) to deepen community trust.
+                </li>
+                <li class="p-3 bg-green-50 rounded-lg border-l-4 border-primary-green">
+                    <span class="font-bold">Content cadence:</span> Maintain frequent short-form uploads (3–5 per week per platform), but selectively boost only the top 10–20% performers.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Section 4: Detailed Action Plan per Platform -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 border-b-2 border-gray-200 pb-2">4. Detailed Action Plan per Platform</h2>
+            <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+
+                <!-- 1. TikTok Card -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 flex flex-col h-full border-t-8 border-primary-green">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2.5 h-2.5 bg-primary-green rounded-full mr-3"></span> TikTok
+                    </h3>
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Q3 Recap / Insights</p>
+                        <p class="text-sm text-gray-700"><span class="font-bold text-primary-green">+677% followers, +440% interactions.</span> Best-performing platform.</p>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Action Plan</p>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><span class="font-bold">Content:</span> Continue myth-busting health topics. Add seasonal relevance.</li>
+                            <li><span class="font-bold">Frequency:</span> 5 videos/week (<60s, with captions).</li>
+                            <li><span class="font-bold">Optimization:</span> Strong hooks in first 3s (“Think cholesterol is bad? Wrong.”). Encourage saves & shares with CTAs (“Save this tip before your next doctor visit.”).</li>
+                            <li><span class="font-bold">Goal (Q4):</span> <span class="text-primary-green">+800–1,000 new followers/week</span>, sustain viral post frequency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. Instagram Card -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 flex flex-col h-full border-t-8 border-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2.5 h-2.5 bg-yellow-500 rounded-full mr-3"></span> Instagram
+                    </h3>
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Q3 Recap / Insights</p>
+                        <p class="text-sm text-gray-700"><span class="font-bold">+42% followers, +50% interactions.</span> Reels outperform, Stories underused.</p>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Action Plan</p>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><span class="font-bold">Reels:</span> 3–4 times/week, recycling top TikToks with platform-specific edits.</li>
+                            <li><span class="font-bold">Stories:</span> Daily short-form stories (polls, Q&A, behind-the-scenes). Weekly “Dr. Frank Mythbuster” poll.</li>
+                            <li><span class="font-bold">Feed:</span> 1–2/week carousels summarizing video points.</li>
+                            <li><span class="font-bold">Goal (Q4):</span> Increase Story reach by 50%, boost engagement rate to <span class="text-primary-green">>3%</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. YouTube Card -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 flex flex-col h-full border-t-8 border-primary-red">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2.5 h-2.5 bg-primary-red rounded-full mr-3"></span> YouTube
+                    </h3>
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Q3 Recap / Insights</p>
+                        <p class="text-sm text-gray-700"><span class="font-bold">+22% subscribers.</span> <span class="font-bold text-primary-red">Low average watch duration (15–30s drop-off).</span></p>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Action Plan</p>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><span class="font-bold">Video Strategy:</span> 2 Shorts/week (repurposed TikToks); 1 long-form (5–8 min) educational video/week.</li>
+                            <li><span class="font-bold">Retention Fixes:</span> Stronger opening hooks (question/problem first). Add visual aids/chaptering.</li>
+                            <li><span class="font-bold">Growth:</span> Create curated playlists. Promote top Shorts on TikTok/IG Stories.</li>
+                            <li><span class="font-bold">Goal (Q4):</span> Increase avg view duration to <span class="text-primary-green">45s+</span> for Shorts, <span class="text-primary-green">3min+</span> for long-form.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Facebook Card -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 flex flex-col h-full border-t-8 border-primary-red">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2.5 h-2.5 bg-primary-red rounded-full mr-3"></span> Facebook
+                    </h3>
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Q3 Recap / Insights</p>
+                        <p class="text-sm text-gray-700"><span class="font-bold">+67% followers.</span> <span class="font-bold text-primary-red">Weak post reach and engagement.</span> Reels are the growth lever.</p>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Action Plan</p>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><span class="font-bold">Reels:</span> Upload top 3 TikToks/week. Boost top 1–2 Reels/month with <span class="font-bold">$50–100 micro-ads</span>.</li>
+                            <li><span class="font-bold">Posts:</span> Reduce static post frequency. Weekly infographic summarizing 3–5 myths.</li>
+                            <li><span class="font-bold">Community:</span> Use Facebook Groups to repost video content and start discussions.</li>
+                            <li><span class="font-bold">Goal (Q4):</span> <span class="text-primary-green">Double reach per post</span>, raise engagement rate by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 5: Q4 KPIs -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">5. Q4 Key Performance Indicators (Targets)</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-3 border rounded-lg">
+                    <p class="text-xs font-semibold uppercase text-gray-500">TikTok</p>
+                    <p class="text-2xl font-bold text-primary-green mt-1">+10K Followers / 1M+ Impressions</p>
+                </div>
+                <div class="p-3 border rounded-lg">
+                    <p class="text-xs font-semibold uppercase text-gray-500">Instagram</p>
+                    <p class="text-2xl font-bold text-primary-green mt-1">+2K Followers / Engagement >3%</p>
+                </div>
+                <div class="p-3 border rounded-lg">
+                    <p class="text-xs font-semibold uppercase text-gray-500">YouTube</p>
+                    <p class="text-2xl font-bold text-primary-green mt-1">+500 Subs / Avg Duration +50%</p>
+                </div>
+                <div class="p-3 border rounded-lg">
+                    <p class="text-xs font-semibold uppercase text-gray-500">Facebook</p>
+                    <p class="text-2xl font-bold text-primary-green mt-1">Reach Doubled / +20% Followers</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 6: Content Calendar (Moved from sidebar) -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">6. 30-Day Content Calendar</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">
+                <p class="text-sm text-gray-600 mb-4">Period: Oct 7 – Nov 5, 2025</p>
+
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-lg font-semibold text-gray-700">October 2025</p>
+                </div>
+
+                <!-- Day Headers -->
+                <div class="grid grid-cols-7 text-center text-xs font-medium text-gray-500 mb-2">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                </div>
+
+                <!-- Calendar Grid -->
+                <div id="calendar-grid" class="grid grid-cols-7 gap-1">
+                    <!-- Calendar days will be rendered here by JS -->
+                </div>
+
+                <!-- Legend -->
+                <div class="mt-6 text-xs space-y-2">
+                    <p class="font-semibold text-gray-700">Themes:</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="flex items-center"><span class="w-3 h-3 rounded-full mr-2 bg-theme-1"></span>Cholesterol Myths</span>
+                        <span class="flex items-center"><span class="w-3 h-3 rounded-full mr-2 bg-theme-2"></span>Diabetes Prevention</span>
+                        <span class="flex items-center"><span class="w-3 h-3 rounded-full mr-2 bg-theme-3"></span>Autoimmune Awareness</span>
+                        <span class="flex items-center"><span class="w-3 h-3 rounded-full mr-2 bg-theme-4"></span>Sleep & Energy</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-sm text-gray-400">
+            © 2025 Vamper Media LLC. All rights reserved.
+        </footer>
+
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="calendar-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden items-center justify-center p-4 z-50 transition-opacity duration-300" onclick="closeModal()">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-6 transform transition-transform duration-300" onclick="event.stopPropagation()">
+            <h3 id="modal-date" class="text-2xl font-extrabold text-gray-900 mb-3"></h3>
+            
+            <div class="space-y-3 mb-6">
+                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Theme & Category</p>
+                <p class="text-lg text-gray-700">
+                    Theme: <span id="modal-theme" class="font-semibold text-theme-1"></span>
+                </p>
+                <p class="text-lg text-gray-700">
+                    Pillar: <span id="modal-pillar" class="font-semibold text-gray-800"></span>
+                </p>
+                <p class="text-lg text-gray-700">
+                    Platform: <span id="modal-platform" class="font-semibold text-gray-800"></span>
+                </p>
+            </div>
+
+            <div class="mb-6 border-t pt-4">
+                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Hook / Caption Idea</p>
+                <p id="modal-hook" class="text-xl text-gray-900 font-medium break-words"></p>
+            </div>
+
+            <button onclick="closeModal()" class="w-full py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold rounded-lg transition duration-150">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // 1. CONTENT DATA
+        const CALENDAR_DATA = [
+            { date: 'Oct 7', theme: 'Cholesterol Myths', pillar: 'Myths', type: 'Reel/Short', hook: 'Think cholesterol is the bad guy? ❌ Think again…' },
+            { date: 'Oct 8', theme: 'Cholesterol Myths', pillar: 'Education', type: 'Carousel/Static', hook: 'LDL isn’t the enemy – here’s why your body needs it.' },
+            { date: 'Oct 9', theme: 'Cholesterol Myths', pillar: 'Lifestyle', type: 'Reel', hook: 'What I eat in a day for heart health ❤️' },
+            { date: 'Oct 10', theme: 'Cholesterol Myths', pillar: 'Testimonials', type: 'Reel', hook: 'I lowered my cholesterol without statins – here’s how.' },
+            { date: 'Oct 11', theme: 'Cholesterol Myths', pillar: 'Community', type: 'Story/Q&A', hook: 'Poll: “Do you believe statins are safe? Yes/No”' },
+            { date: 'Oct 12', theme: 'Cholesterol Myths', pillar: 'Education', type: 'Reel', hook: 'Statins block more than cholesterol – here’s the side effect no one tells you.' },
+            { date: 'Oct 13', theme: 'Cholesterol Myths', pillar: 'Round-up', type: 'Reel/Carousel', hook: 'Top 3 cholesterol myths busted this week' },
+            { date: 'Oct 14', theme: 'Diabetes Prevention', pillar: 'Education', type: 'Reel', hook: 'Think diabetes is just about sugar? 🚫 Wrong.' },
+            { date: 'Oct 15', theme: 'Diabetes Prevention', pillar: 'Lifestyle', type: 'Reel', hook: '3 daily habits that lower blood sugar naturally.' },
+            { date: 'Oct 16', theme: 'Diabetes Prevention', pillar: 'Myths', type: 'Carousel', hook: 'Fasting insulin > fasting glucose. Here’s why.' },
+            { date: 'Oct 17', theme: 'Diabetes Prevention', pillar: 'Testimonials', type: 'Reel', hook: 'My patient reversed prediabetes in 90 days.' },
+            { date: 'Oct 18', theme: 'Diabetes Prevention', pillar: 'Education', type: 'Story', hook: 'Quiz: “Which food spikes blood sugar the fastest?”' },
+            { date: 'Oct 19', theme: 'Diabetes Prevention', pillar: 'Education', type: 'Reel', hook: 'Why most people miss this hidden diabetes warning sign.' },
+            { date: 'Oct 20', theme: 'Diabetes Prevention', pillar: 'Round-up', type: 'Reel', hook: 'This week’s biggest diabetes myths busted.' },
+            { date: 'Oct 21', theme: 'Autoimmune Awareness', pillar: 'Myths', type: 'Reel', hook: '🚨 Most autoimmune diseases are misdiagnosed. Here’s what’s missed.' },
+            { date: 'Oct 22', theme: 'Autoimmune Awareness', pillar: 'Education', type: 'Carousel', hook: 'The 5 most overlooked autoimmune symptoms.' },
+            { date: 'Oct 23', theme: 'Autoimmune Awareness', pillar: 'Lifestyle', type: 'Reel', hook: 'My #1 anti-inflammatory morning routine 🌿' },
+            { date: 'Oct 24', theme: 'Autoimmune Awareness', pillar: 'Community', type: 'Story', hook: 'Poll: “Do you know someone with an autoimmune condition?”' },
+            { date: 'Oct 25', theme: 'Autoimmune Awareness', pillar: 'Education', type: 'Reel', hook: 'Think it’s rare? 1 in 5 Americans has an autoimmune condition.' },
+            { date: 'Oct 26', theme: 'Autoimmune Awareness', pillar: 'Testimonials', type: 'Reel', hook: 'Living with autoimmune disease: my patient’s journey.' },
+            { date: 'Oct 27', theme: 'Autoimmune Awareness', pillar: 'Round-up', type: 'Reel', hook: 'Top 3 autoimmune facts you need this week.' },
+            { date: 'Oct 28', theme: 'Sleep & Energy', pillar: 'Lifestyle', type: 'Reel', hook: 'Waking up tired even after 8 hours? Here’s why…' },
+            { date: 'Oct 29', theme: 'Sleep & Energy', pillar: 'Education', type: 'Carousel', hook: '3 signs of hidden sleep apnea.' },
+            { date: 'Oct 30', theme: 'Sleep & Energy', pillar: 'Myths', type: 'Reel', hook: '😴 Snoring isn’t just annoying – it’s a warning sign.' },
+            { date: 'Oct 31', theme: 'Sleep & Energy', pillar: 'Lifestyle', type: 'Reel', hook: '3 DIY sleep apnea fixes to try tonight.' },
+            { date: 'Nov 1', theme: 'Sleep & Energy', pillar: 'Testimonials', type: 'Reel', hook: 'How one patient beat fatigue by fixing sleep.' },
+            { date: 'Nov 2', theme: 'Sleep & Energy', pillar: 'Community', type: 'Story', hook: 'Poll: “Do you wake up tired? Yes/No”' },
+            { date: 'Nov 3', theme: 'Sleep & Energy', pillar: 'Education', type: 'Reel', hook: 'The #1 nutrient deficiency linked to chronic fatigue.' },
+            { date: 'Nov 4', theme: 'Sleep & Energy', pillar: 'Round-up', type: 'Reel', hook: 'Best energy hacks from this week.' },
+            { date: 'Nov 5', theme: 'Sleep & Energy', pillar: 'Education', type: 'Carousel', hook: '7 habits that destroy your sleep quality.' }
+        ];
+
+        // 2. COLOR MAPPING
+        const THEME_COLORS = {
+            'Cholesterol Myths': 'bg-theme-1 text-white shadow-md hover:bg-cyan-600',
+            'Diabetes Prevention': 'bg-theme-2 text-white shadow-md hover:bg-indigo-600',
+            'Autoimmune Awareness': 'bg-theme-3 text-white shadow-md hover:bg-orange-600',
+            'Sleep & Energy': 'bg-theme-4 text-white shadow-md hover:bg-pink-600',
+        };
+
+        // 3. UTILITY FUNCTIONS
+
+        // Function to convert 'Oct 7' to 'Oct 7, 2025' for display
+        function getFullDate(dateString) {
+            // Simple logic for the fixed 2025 period
+            if (dateString.includes('Nov')) {
+                return dateString + ', 2025';
+            }
+            return dateString + ', 2025';
+        }
+
+        // Function to display the modal
+        function openModal(dataIndex) {
+            const data = CALENDAR_DATA[dataIndex];
+            if (!data) return;
+
+            const modal = document.getElementById('calendar-modal');
+            
+            // Apply the correct theme color to the theme text in the modal
+            const themeColorClass = THEME_COLORS[data.theme].split(' ')[0].replace('bg', 'text');
+
+            document.getElementById('modal-date').innerText = getFullDate(data.date);
+            document.getElementById('modal-theme').innerText = data.theme;
+            document.getElementById('modal-theme').className = `font-semibold ${themeColorClass}`;
+            document.getElementById('modal-pillar').innerText = data.pillar;
+            document.getElementById('modal-platform').innerText = data.type;
+            document.getElementById('modal-hook').innerText = data.hook;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        // Function to hide the modal
+        function closeModal() {
+            const modal = document.getElementById('calendar-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // 4. CALENDAR RENDERING
+
+        function renderCalendar() {
+            const grid = document.getElementById('calendar-grid');
+            if (!grid) return;
+            
+            let html = '';
+            
+            // Since Oct 7 is a Tuesday (index 1 if Mon=0), we add 1 empty filler day
+            const startDayOfWeek = 1; // Tuesday is the 2nd day (Mon=0, Tue=1)
+            
+            // Add filler days for visual alignment (Starts on Monday)
+            for (let i = 0; i < startDayOfWeek; i++) {
+                html += '<div class="day-cell p-1"></div>';
+            }
+
+            // Add the 30 content days
+            CALENDAR_DATA.forEach((item, index) => {
+                const colorClass = THEME_COLORS[item.theme] || 'bg-gray-200';
+                
+                const dayNumber = item.date.split(' ')[1] || '';
+
+                html += `
+                    <div 
+                        class="day-cell p-1 rounded-lg flex flex-col justify-between items-center text-center ${colorClass}"
+                        onclick="openModal(${index})"
+                    >
+                        <span class="text-xs font-bold w-full text-right p-1">${dayNumber}</span>
+                        <span class="text-[9px] font-medium leading-tight mb-1 opacity-90">${item.pillar}</span>
+                    </div>
+                `;
+            });
+
+            // Add filler days for the rest of the 5x7 grid (up to 35 cells)
+            const totalDaysRendered = startDayOfWeek + CALENDAR_DATA.length;
+            const remainingFillers = 35 - totalDaysRendered;
+            for (let i = 0; i < remainingFillers; i++) {
+                 // Check if we passed Nov 5 (which is the last day, 30th entry) and need to fill Nov.
+                 // We stop rendering days after the 5th week/35th day for Oct/Nov calendar period
+                if (totalDaysRendered + i < 35) {
+                    html += '<div class="day-cell p-1 text-gray-400 bg-gray-100 rounded-lg"></div>';
+                }
+            }
+
+            grid.innerHTML = html;
+        }
+
+        // Initialize the calendar on page load
+        window.onload = renderCalendar;
+    </script>
+</body>
+</html>
